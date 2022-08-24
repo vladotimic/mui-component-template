@@ -14,7 +14,14 @@ export default function Layout({ children }) {
         }}
       >
         <Sidebar />
-        <Box>{children}</Box>
+        <Box
+          sx={{
+            width: '100%',
+            p: '2rem',
+          }}
+        >
+          {children}
+        </Box>
       </Box>
     </>
   );
