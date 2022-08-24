@@ -17,17 +17,22 @@ const sidebarLinks = [
       {
         key: 'inlineForm',
         name: 'Inline Form',
-        url: '/inline-form',
+        url: '/forms/inline-form',
       },
       {
         key: 'dialogForm',
         name: 'Dialog Form',
-        url: '/dialog-form',
+        url: '/forms/dialog-form',
       },
       {
         key: 'Fields',
         name: 'Fields',
-        url: '/fields',
+        url: '/forms/fields',
+      },
+      {
+        key: 'Buttons',
+        name: 'Buttons',
+        url: '/forms/buttons',
       },
     ],
   },
