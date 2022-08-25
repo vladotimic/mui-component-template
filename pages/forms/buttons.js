@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 import FormButtons from '../../components/forms/buttons/FormButtons';
 
-export default function Buttons() {
+export default function ButtonsPage() {
   return (
     <>
       <Head>
