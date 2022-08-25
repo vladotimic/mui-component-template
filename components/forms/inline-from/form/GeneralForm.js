@@ -17,26 +17,6 @@ import {
 
 import useFormState from './useFormState';
 
-const nameFields = [
-  {
-    variant: 'outline',
-    label: 'First Name',
-    name: 'firstName',
-    sx: {
-      width: '100%',
-    },
-  },
-  {
-    variant: 'outline',
-    label: 'Last Name',
-    name: 'lastName',
-    sx: {
-      width: '100%',
-      ml: 2,
-    },
-  },
-];
-
 export default function GeneralForm() {
   const { values, handleSubmit, handleChange, handleClickShowPassword } =
     useFormState();
