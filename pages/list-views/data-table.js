@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import Table from '../../components/list-views/data-table/Table';
+import Table from '../../components/list-views/data-table/DataTable';
 
 export default function DataTable() {
   return (

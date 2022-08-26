@@ -1,7 +1,9 @@
 import { useState } from 'react';
-import { Box, Tabs, Tab } from '@mui/material';
+import { Box, Tabs, Tab, Button } from '@mui/material';
+import { SaveAlt, Delete } from '@mui/icons-material';
 
 import GeneralForm from './form/GeneralForm';
+import Table from '../../list-views/data-table/Table';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -50,10 +52,26 @@ export default function BasicTabs() {
         <GeneralForm />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Item Two
+        <Box
+          sx={{
+            my: 3,
+          }}
+        >
+          <Button variant="contained" startIcon={<SaveAlt />}>
+            Save
+          </Button>
+          <Button
+            variant="contained"
+            color="error"
+            startIcon={<Delete />}
+            sx={{ mx: 2 }}
+          >
+            Delete
+          </Button>
+        </Box>
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+        <Table />
       </TabPanel>
     </Box>
   );
