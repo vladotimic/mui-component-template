@@ -36,6 +36,17 @@ const sidebarLinks = [
       },
     ],
   },
+  {
+    id: '3',
+    name: 'Dialogs',
+    links: [
+      {
+        key: 'dialog',
+        name: 'Dialog',
+        url: '/dialogs/dialog',
+      },
+    ],
+  },
 ];
 
 export default sidebarLinks;
