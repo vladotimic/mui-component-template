@@ -18,12 +18,12 @@ export default function ButtonExample({ text, buttons }) {
         {text}
       </Typography>
       {buttons.map((button) => {
-        const { text, loading } = button;
+        const { id, text, loading } = button;
 
         if (loading) {
           return (
             <LoadingButton
-              key={text}
+              key={id}
               {...button}
               sx={{
                 mx: '0.5rem',
@@ -36,7 +36,7 @@ export default function ButtonExample({ text, buttons }) {
 
         return (
           <Button
-            key={text}
+            key={id}
             {...button}
             sx={{
               mx: '0.5rem',

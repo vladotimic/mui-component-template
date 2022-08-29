@@ -15,7 +15,8 @@ export default function FormButtons() {
         Buttons
       </Typography>
       {data.map((item) => {
-        return <ButtonExample key={item.text} {...item} />;
+        const { id } = item;
+        return <ButtonExample key={id} {...item} />;
       })}
     </>
   );
